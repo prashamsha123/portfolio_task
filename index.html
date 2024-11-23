@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="150883-799711528_medium.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Full Stack Developer, AI Enthusiast, and Tech Innovator</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+    
+    <section id="about-me" class="animated-section" >
+        <div class="container">
+            <h1>About Me</h1><br><br>
+            <p>I am a dynamic technology leader with strong expertise in full-stack development, AI software development, and machine learning. As the Chief Technology Officer at Persist Ventures and FacesearchAI, I manage and drive technology strategy, overseeing AI-driven projects and full-stack development. With experience in both leadership and hands-on roles, including internships in AI and software engineering, I am passionate about leveraging cutting-edge technologies to create innovative, real-world solutions. My technical skills include Kubernetes, Docker, Swagger API, NLP, and machine learning, and I strive to enhance my leadership abilities and technical knowledge continuously.</p>
+        </div>
+    </section>
+
+    <section id="experience" >
+        <h2>Experience</h2>
+        <div class="timeline">
+    
+            <!-- Chief Technology Officer - Persist Ventures -->
+            <div class="timeline-item">
+                <h3>Chief Technology Officer</h3>
+                <p><strong>Persist Ventures</strong></p>
+                <p>April 2024 – Present (8 months)</p>
+                <div class="progress-bar">
+                    <span style="--duration: 30%;"></span>
+                </div>
+                <div class="details">
+                <ul>
+                    <li>Lead technology strategy and development, managing the full technology stack and product lifecycle.</li>
+                    <li>Collaborate with cross-functional teams to align technology solutions with business goals.</li>
+                    <li>Mentor junior developers, contributing to innovation initiatives.</li>
+                </ul>
+                </div>
+                <span class="see-more" onclick="toggleDetails(this)">See More</span>
+            </div>
+    
+            <!-- Chief Technology Officer - FacesearchAI -->
+            <div class="timeline-item">
+                <h3>Chief Technology Officer</h3>
+                <p><strong>FacesearchAI</strong></p>
+                <p>November 2023 – Present (1 year 1 month)</p>
+                <div class="progress-bar">
+                    <span style="--duration: 55%;"></span>
+                </div>
+                <div class="details">
+                <ul>
+                    <li>Spearhead AI-driven projects, focusing on facial recognition technologies and ensuring scalable, secure AI products.</li>
+                    <li>Manage development teams and integrate AI algorithms and NLP to enhance product accuracy and functionality.</li>
+                </ul>
+            </div>
+            <span class="see-more" onclick="toggleDetails(this)">See More</span>
+            </div>
+    
+            <!-- Full Stack Engineer - FacesearchAI -->
+            <div class="timeline-item">
+                <h3>Full Stack Engineer</h3>
+                <p><strong>FacesearchAI</strong></p>
+                <p>October 2023 – Present (1 year 2 months)</p>
+                <div class="progress-bar">
+                    <span style="--duration: 65%;"></span>
+                </div>
+                <div class="details">
+                <ul>
+                    <li>Developed both front-end and back-end components of software applications.</li>
+                    <li>Worked with databases, API integrations, and user interfaces to build robust, scalable applications.</li>
+                    <li>Ensured seamless deployment and performance improvements.</li>
+                </ul>
+            </div>
+                <span class="see-more" onclick="toggleDetails(this)">See More</span>
+            </div>
+    
+            <!-- AI Software Developer Intern - HeyDaw Technologies -->
+            <div class="timeline-item">
+                <h3>AI Software Developer (Intern)</h3>
+                <p><strong>HeyDaw Technologies</strong></p>
+                <p>August 2023 – October 2023 (3 months)</p>
+                <div class="progress-bar">
+                    <span style="--duration: 20%;"></span>
+                </div>
+                <div class="details">
+                <ul>
+                    <li>Assisted in developing AI models and integrating NLP into software solutions.</li>
+                    <li>Worked on R&D projects, training and testing machine learning models.</li>
+                    <li>Gained hands-on experience with Python and AI tools for enhanced data processing.</li>
+                </ul>
+            </div>
+                <span class="see-more" onclick="toggleDetails(this)">See More</span>
+            </div>
+    
+            <!-- Software Engineer Intern - Telaverge Communications -->
+            <div class="timeline-item">
+                <h3>Software Engineer (Intern)</h3>
+                <p><strong>Telaverge Communications</strong></p>
+                <p>May 2022 – April 2023 (1 year)</p>
+                <div class="progress-bar">
+                    <span style="--duration: 50%;"></span>
+                </div>
+                <div class="details">
+                <ul>
+                    <li>Contributed to API development using Swagger and improved software reliability with Kubernetes and Docker.</li>
+                    <li>Gained experience in REST APIs, cloud platforms, and Agile development methodologies.</li>
+                    <li>Worked on database management, deployment pipelines, and software maintenance.</li>
+                </ul>
+            </div>
+                <span class="see-more" onclick="toggleDetails(this)">See More</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" >
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-front">
+                        <h3>Interactive Chatbot</h3>
+                        <p>An AI-driven chatbot for mining industry regulations.</p>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Technologies:</strong> Python, TensorFlow, Flask</p>
+                        <p><strong>Details:</strong> Designed to streamline user queries with quick responses, enhancing productivity.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <h3>E-Commerce Website</h3>
+                        <p>A scalable, responsive online shopping platform.</p>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Technologies:</strong> React.js, Node.js, MongoDB</p>
+                        <p><strong>Details:</strong> Features include user authentication, product filtering, and real-time cart updates.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <h3>Portfolio Website</h3>
+                        <p>My personal website showcasing projects and skills.</p>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Details:</strong> Fully responsive design with smooth animations and optimized performance.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>A dashboard for visualizing complex datasets.</p>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Technologies:</strong> Python, Matplotlib, Pandas</p>
+                        <p><strong>Details:</strong> Provides insights with charts, graphs, and filters for dynamic analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="background" class="animated-section" >
+        <div class="content">
+          <h2>Background</h2><br><br>
+          <p>
+            Bhavya Bansal is a technology leader specializing in Artificial Intelligence (AI), Machine Learning (ML), and Full-Stack Development. With extensive experience in both leadership and hands-on roles, Bhavya demonstrates a strong grasp of technical and managerial responsibilities. As the Chief Technology Officer (CTO) at Persist Ventures and FacesearchAI, Bhavya has spearheaded technology strategies, managed AI-driven projects, and led development teams to build scalable and innovative solutions.
+
+            Bhavya's academic foundation lies in Computer Science and Engineering, with a focus on core technical areas such as data structures, algorithms, database management, and AI development. Bhavya holds a BTech degree from Dr. A.P.J. Abdul Kalam Technical University.
+            
+            With certifications in data science and AI-related technologies, Bhavya is proficient in Python, Kubernetes, Docker, and other industry-standard tools, and has contributed to projects ranging from AI-powered facial recognition systems to full-stack e-commerce applications.
+            
+            Bhavya’s technical skills are complemented by a leadership-oriented approach, mentoring teams and aligning technology with business goals. This dual expertise positions Bhavya as an innovative and results-driven professional in the tech industry.
+          </p>
+        </div>
+    </section>
+    
+   
+      <!-- AOS JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1200, // Animation duration in ms
+          once: true, // Run animation only once
+        });
+      </script>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Data Science with Python</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Applied Data Science Capstone</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Data Analysis with Python</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Data Visualization with Python</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Databases & SQL for Data Science</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Machine Learning with Python</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Python Project for Data Science</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Python for Data Science AI & Development</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Tools for Data Science</h3>
+                    <p><strong>IBM</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Data Science Foundation Certificate</h3>
+                    <p><strong>Infosys</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Python Programmer Certification</h3>
+                    <p><strong>Infosys</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>Data Science Methodology</h3>
+                    <p><strong>Infosys</strong></p>
+                </div>
+                <div class="cert-card">
+                    <h3>What is Data Science</h3>
+                    <p><strong>Infosys</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+    <section id="professional-summary">
+        
+        <div class="circle-container">
+            
+            <div class="circle">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="circle-text">
+                <p>Innovation</p>
+            </div>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="circle-text">
+                <p>Collaboration</p>
+            </div>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="circle-text">
+                <p>Efficiency</p>
+            </div>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="circle-text">
+                <p>Achievement</p>
+            </div>
+            
+        </div>
+       
+        
+    </section>
+    
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Bhavya Bansal</p>
+    </footer>
+
+    <script>
+        // Function to detect when elements are in view
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+        }
+
+        // Apply animation when element is in viewport
+        function handleScroll() {
+            const elements = document.querySelectorAll('section, h2, h3'); // Targeting section, h2, and h3
+            elements.forEach(function(element) {
+                if (isInViewport(element)) {
+                    element.style.opacity = 1; // Fade in
+                    element.style.transform = 'translateY(0)'; // Slide up
+                }
+            });
+        }
+
+        // Trigger scroll handler
+        window.addEventListener('scroll', handleScroll);
+
+        // Initial check on page load
+        handleScroll();
+
+        
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
